@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="#">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .menu{
+        position: relative;
+        font-size: 50px;
+        color: red;
+        background-color: yellow;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .types{
+        font-size: 27px;
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(255, 68, 0);
+        background-color: rgb(43, 226, 186);
+    }
+    .a1, .a2, .a3, .a4, .a5{
+        width: auto;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);   
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .sample{
+        float: left;
+        width: 9pc;
+        height: 9pc;
+    }
+    h2{
+        color:rgb(168, 8, 42)
+    }
+    .btn-add, .btn-details{
+        background-color: crimson;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        margin-left: 15px;
+        cursor: pointer;
+        padding:auto;
+    }
+    .btn:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .spinfo{
+        position:relative;
+        display: grid;
+        gap: 50px;
+        border: 1px solid greenyellow;
+        background-color: rgb(174, 255, 0);
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'sp1 sp2'
+        'sp3 sp4';
+    }
+    .a1{
+        grid-area: sp1;
+    }
+    .a2{
+        grid-area: sp2;
+    }
+    .a3{
+        grid-area: sp3;
+    }
+    .a4{
+        grid-area: sp4;
+    }
+    .a5{
+        grid-area: sp5;
+    }
+</style>
+<body>
+    <p class="menu">MENU</p>
+
+    <p class="types">Foods</p>
+    <div class="spinfo">
+        <div class="a1">
+            <img class="sample" src="big mac.jpg" alt="bigmac">
+            <h2>Hamburger</h2>
+            <p>beef, cheese and vegetables</p>
+            <hr>
+            <h3>
+                price:1.5$ 
+                <button class="btn-add">Add to Cart</button> 
+                <button class="btn-details"><a href="#" style="text-decoration:none; color:white;">Details</a></button>
+            </h3>
+        </div>
+        <div class="a2">
+            <img class="sample" src="Chicken Nuggets.jpg" alt="Nuggets">
+            <h2>Chicken nuggets</h2>
+            <p>deep fried chicken</p>
+            <hr>
+            <h3>
+                price: 0.99$ 
+                <button class="btn-add">Add to Cart</button> 
+                <button class="btn-details"><a href="#" style="text-decoration:none; color:white;">Details</a></button>
+            </h3>
+        </div>
+        <div class="a3">
+            <img class="sample" src="pancake.jpg" alt="pancake">
+            <h2>Pancake</h2>
+            <p>cake with sweets</p>
+            <hr>
+            <h3>price: 1.49$ 
+                <button class="btn-add">Add to Cart</button> 
+                <button class="btn-details"><a href="#" style="text-decoration:none; color:white;">Details</a></button>
+            </h3>
+        </div>
+        <div class="a4">
+            <img class="sample" src="chickensandwich.jpg" alt="chickensandwich">
+            <h2>Chickensandwich</h2>
+            <p>chicken and vegetables</p>
+            <hr>
+            <h3>
+                price: 1.35$ 
+                <button class="btn-add">Add to Cart</button> 
+                <button class="btn-details"><a href="#" style="text-decoration:none; color:white;">Details</a></button>
+            </h3>
+        </div>
+    </div>
+    <br>
+    <p class="types">Drinks</p>
+    <div class="spinfo">
+        <div class="a1">
+            <img class="sample" src="Arabica.jpg" alt="Arabica">
+            <h2>Arabica</h2>
+            <hr>
+            <h3>
+                price: 1.5$ 
+                <button class="btn-add">Add to Cart</button> 
+                <button class="btn-details"><a href="#" style="text-decoration:none; color:white;">Details</a></button>
+            </h3>
+        </div>
+        <div class="a2">
+            <img class="sample" src="cappuccino.jpg" alt="cappuccino">
+            <h2>Combo 4 Cappuccino</h2>
+            <hr>
+            <h3 style="color: red">
+                price: <s>10.0$</s> 7.99$ 
+                <button class="btn-add">Add to Cart</button> 
+                <button class="btn-details"><a href="#" style="text-decoration:none; color:white;">Details</a></button>
+            </h3>
+        </div>
+        <div class="a3">
+            <img class="sample" src="Expresso.jpg" alt="Expresso">
+            <h2>Expresso</h2>
+            <hr>
+            <h3>
+                price: 1.49$ 
+                <button class="btn-add">Add to Cart</button> 
+                <button class="btn-details"><a href="#" style="text-decoration:none; color:white;">Details</a></button>
+            </h3>
+        </div>
+        <div class="a4">
+            <img class="sample" src="drink.jpg" alt="drink">
+            <h2>Iced coffee</h2>
+            <hr>
+            <h3>
+                price: 1.35$
+                <button class="btn-add">Add to Cart</button> 
+                <button class="btn-details"><a href="#" style="text-decoration:none; color:white;">Details</a></button>
+            </h3>
+        </div>
+    </div>
+    <script>
+        const btn_add =document.getElementById("btn-add");
+        const btn_details =document.getElementById("btn-details");
+    </script>
+</body>
+</html>
